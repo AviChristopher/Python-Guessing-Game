@@ -47,14 +47,14 @@ def start_game():
                 print(">>>>>Attempt Score<<<<<")
                 print(att_list)
                 print("Do you think you can beat this score?")           
-        play_again = input("Play again. Y/N  ").lower() 
-        if play_again   == 'Y' or play_again == 'y':
-            print(">>>>>HIGHSCORE<<<<<")
-            print(f">>>The least number of guesses: {min(att_list)} ")
-            start_game()    
-        else:
-            print(u"\U0001F61E" "Sad to see you go. Come again !")
-        break
+            play_again = input("Play again. Y/N  ").lower() 
+            if play_again   == 'Y' or play_again == 'y':
+                print(">>>>>HIGHSCORE<<<<<")
+                print(f">>>The least number of guesses: {min(att_list)} ")
+                start_game()  
+            else:
+                print(u"\U0001F61E" "Sad to see you go. Come again !")
+            break
                 
             # Kick off the program by calling the start_game function.
 
